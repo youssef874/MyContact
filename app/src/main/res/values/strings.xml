@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">StraemWideTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading_message">Please wait until we extract the al the contact</string>
+    <string name="permission_error_string">"Please give the permission to extrac all your catact information "</string>
+    <string name="grant_permission_string">Grant permission</string>
+    <string name="request_permission_alert_dialog_title">Permission required</string>
+    <string name="request_permission_for_read_contact_alert_dialog_message">In order to display your contact list we ask you to give us the permission to read the contact</string>
+    <string name="request_permission_alert_dialog_positive_button_label">Allow</string>
+    <string name="request_permission_alert_dialog_negative_button_label"> Cancel</string>
+    <string name="home_string">Home</string>
+    <string name="no_contact_message">We didn\'t find any contact in your phone please add a contact</string>
+    <string name="add_contact_string">Add contact</string>
+    <string name="phone_number_string">Phone number</string>
+    <string name="name_string">Name</string>
+    <string name="add_contact">Add</string>
+    <string name="empty_name_error_message">The contact name is required</string>
+    <string name="empty_number_error_message">The phone number is required</string>
+    <string name="error_size_number_message">Phone number must have exactly 8 character</string>
+    <string name="insert_data_error_message">We could not add your contact please try again</string>
+</resources>
