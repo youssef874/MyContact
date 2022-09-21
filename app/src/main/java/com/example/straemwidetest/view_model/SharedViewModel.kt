@@ -133,6 +133,7 @@ class SharedViewModel(private val repository: Repository) : ViewModel() {
                         )
                     )
             } catch (e: Exception) {
+                e.printStackTrace()
                 _contactAddedToTheDatabase.postValue(Result.Error(listOf(), e.message))
             }
         }

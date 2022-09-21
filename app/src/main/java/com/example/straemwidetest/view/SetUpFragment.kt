@@ -61,7 +61,6 @@ class SetUpFragment : Fragment() {
                 viewModel.setReadContactPermissionStatus(isGranted)
             }
 
-        displayLoadingContainer()
         //Always call this method to check the permission status and update isReadContactPermissionGranted
         //attribute of the [SharedViewModel]
         context?.requestReadContactPermission(readContactPermission)?.let {
@@ -78,6 +77,7 @@ class SetUpFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentSetUpBinding.inflate(inflater, container, false)
+        displayLoadingContainer()
         return binding.root
     }
 
@@ -146,6 +146,7 @@ class SetUpFragment : Fragment() {
                     contactSize = 0
                     //Notify the [SharedViewModel] the device contact has no data
                     viewModel.setIsDataContactEmpty(true)
+                    navigateToHomeFragment()
                 }
             }
         }
